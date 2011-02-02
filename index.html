@@ -4,6 +4,20 @@
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 		<title>TRLA Status</title>
 		<link rel="stylesheet" href="./css/master.css" type="text/css" media="screen" charset="utf-8" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$.getJSON('http://search.twitter.com/search.json?q=trlastatus&callback=?', 
+					function(feed){
+						$.each(feed.results, function(i, tweet){
+							$('#twitter').append('<div class="tweet">' + tweet.text + '</div>');
+						});
+					}
+				);
+			});
+		</script>
+		
 	</head>
 	<body>
 		<div id="header">
@@ -19,7 +33,7 @@
 			<span class="up">Citrix : CTS</span>
 			<span class="up">VoIP</span>
 			<span class="up">Internet</span>
-			<span class="down">Email</span>
+			<span class="up">Email</span>
 		</div>
 		
 		<div id="message">
@@ -30,90 +44,96 @@ In these conditions, it is particularly important that you regularly save your w
 		<div class="clear"></div>
 		
 		<hr width="85%" />
+		<div id="contain">
+			<div id="status">
+				<table border="1" cellspacing="0" cellpadding="5">
+					<tr>
+						<th>Office</th>
+						<th>Status</th>
+					</tr>
+					<tr>
+						<td>Alpine</td>
+						<td>CLOSED: Weather</td>
+					</tr>
+					<tr>
+						<td>Austin</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>Bee County Regional Public Defender</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>Brownsville</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>Corpus Christi Courthouse</td>
+						<td>CLOSED: Power Outage</td>
+					</tr>
+					<tr>
+						<td>Corpus Christi Pueblo</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>Del Rio</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>Eagle Pass</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>Edinburg</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>El Paso</td>
+						<td>CLOSED: Weather</td>
+					</tr>
+					<tr>
+						<td>Harlingen</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>Kerrville</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>Laredo</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>Nashville (SMLS)</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>San Antonio Main</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>Sinton</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>Victoria</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>Weslaco</td>
+						<td>Open</td>
+					</tr>
+					<tr>
+						<td>Willacy County Public Defender</td>
+						<td>Open</td>
+					</tr>
+				</table>
+			</div>
 		
-		<div id="status">
-			<table border="1" cellspacing="0" cellpadding="5" align="center">
-				<tr>
-					<th>Office</th>
-					<th>Status</th>
-				</tr>
-				<tr>
-					<td>Alpine</td>
-					<td>CLOSED: Weather</td>
-				</tr>
-				<tr>
-					<td>Austin</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>Bee County Regional Public Defender</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>Brownsville</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>Corpus Christi Courthouse</td>
-					<td>CLOSED: Power Outage</td>
-				</tr>
-				<tr>
-					<td>Corpus Christi Pueblo</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>Del Rio</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>Eagle Pass</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>Edinburg</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>El Paso</td>
-					<td>CLOSED: Weather</td>
-				</tr>
-				<tr>
-					<td>Harlingen</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>Kerrville</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>Laredo</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>Nashville (SMLS)</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>San Antonio Main</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>Sinton</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>Victoria</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>Weslaco</td>
-					<td>Open</td>
-				</tr>
-				<tr>
-					<td>Willacy County Public Defender</td>
-					<td>Open</td>
-				</tr>
-			</table>
+			<div id="twitter">
+				<img src="./images/twitter-32x32.png" />
+			</div>
+			<div class="clear"></div>
 		</div>
 	</body>
 </html>
