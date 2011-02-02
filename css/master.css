@@ -3,7 +3,6 @@ body{
 	font-size: .9em;
 	margin: auto;
 	margin-bottom: 25px;
-	width: 95%;
 	text-shadow: 0px -1px 0px #fff;
 	text-align: center;
 }
@@ -17,34 +16,16 @@ a:hover{
 	color: #e53f29;
 }
 
-#menu{
-	font-size: 1.2em;
-}
-
-#alerts{
-	font-size: 1.2em;
-	margin: 10px;
-	color: #fff;
-}
-
-#alerts span{
-	padding: 4px;
-	border: 1px solid #444;
-	font-weight: bold;
-	text-shadow: 0px 1px 1px #000;
-}
-
-.up{
-	background-color: #0d0;
-}
-
-.down{
-	background-color: #d00;
+#top,
+#bottom{
+	width: 850px;
+	margin: auto;
 }
 
 #message{
 	margin: auto;
-	width: 75%;
+	float: left;
+	width: 500px;
 	text-align: left;
 	border: 1px solid #ccc;
 	background-color: #eee;
@@ -57,28 +38,65 @@ a:hover{
 	margin-bottom: 10px;
 }
 
-#contain{
-	width: 810px;
-	margin: auto;
-}
-
 #status{
 	float: left;
-	margin: auto;
-	width: 400px;
-}
-
-#twitter{
-	float: left;
 	font-size: 1.2em;
-	width: 400px;
+	text-align: left;
+	width: 300px;
 	margin-left: 10px;
 }
 
+#status .up{
+	color: #0a0;
+}
+
+#status .down{
+	color: #a00;
+}
+#alerts{
+	float: left;
+	font-size: 1.2em;
+	color: #fff;
+	margin-left: 10px;
+}
+
+#alerts div{
+	padding: 4px;
+	border: 1px solid #444;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px #000;
+	margin-bottom: 4px;
+}
+
+#alerts .up{
+	background-color: #0d0;
+}
+
+#alerts .down{
+	background-color: #d00;
+}
+
+#twitter{
+	margin: auto;
+	font-size: 1.2em;
+	width: 700px;
+}
+
 .tweet{
+	padding: 2px;
+	height: 50px;
 	margin-bottom: 4px;
 	padding-bottom: 4px;
-	border-bottom: 2px solid #444;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	text-align: left;
+	background-color: #eee;
+}
+
+.tweet img{
+	float: left;
+	clear: left;
+	padding: 2px;
 }
 
 .date{

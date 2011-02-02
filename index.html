@@ -5,13 +5,25 @@
 		<title>TRLA Status</title>
 		<link rel="stylesheet" href="./css/master.css" type="text/css" media="screen" charset="utf-8" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
-		
+		<script type="text/javascript" charset="utf-8" src="./offices.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function(){
-				$.getJSON('http://search.twitter.com/search.json?q=trlastatus&callback=?', 
+				$.each(offices, function(i, office){
+					$('#status').append('<div class="office">' + office.name + ': <span class="status">' + office.status + '</div>');
+					
+					$('.status').each(function(){
+						if ($(this).html() == 'Open') {
+							$(this).addClass('up');
+						}else{
+							$(this).addClass('down');
+						}
+					});
+				});
+				
+				$.getJSON('http://search.twitter.com/search.json?q=trlastatus&count=2&callback=?', 
 					function(feed){
 						$.each(feed.results, function(i, tweet){
-							$('#twitter').append('<div class="tweet">' + tweet.text + '<div class="date">' + tweet.created_at + '</div></div>');
+							$('#twitter').append('<div class="tweet"><img src="' + tweet.profile_image_url + '" />' + tweet.text + '<div class="date">' + tweet.created_at + '</div></div>');
 						});
 					}
 				);
@@ -24,115 +36,23 @@
 			<img src="./images/header_logo.gif" />
 		</div>
 		
-		<div id="menu">
-			<a href="#status">Office Status</a> &middot; 
-			<a href="#message">Message</a>
-		</div>		
-		
-		<div id="alerts">
-			<span class="up">Citrix : CTS</span>
-			<span class="up">VoIP</span>
-			<span class="up">Internet</span>
-			<span class="up">Email</span>
-		</div>
-		
-		<div id="message">
-			<p>We have had reports that a number of offices have experienced electrical power blackouts and/or brownouts today, including San Antonio - that's where our central server farm resides, of course. As a result, access to the internet, the CTS and VoIP phone service has been affected in all offices. Joseph Resurreccion has learned from the power company that these outages are part of an intentional program of rolling blackouts designed to relieve strain on the power grid during this arctic blast. They anticipate the problem lasting until Friday. The power grid is essentially state-wide, so this is not an isolated phenomenon. It appears that the outages will last 45" - 60" and so far have been spaced several hours apart. We are unable to get definite information from the power company on whether this pattern will hold over the period of the freeze, or will vary, or will get worse, or get better. Also, keep in mind that in an event like this there will also be unplanned power outages in many cities; those are even more unpredictable.
+		<div id="top">
+			<div id="message">
+				<p>We have had reports that a number of offices have experienced electrical power blackouts and/or brownouts today, including San Antonio - that's where our central server farm resides, of course. As a result, access to the internet, the CTS and VoIP phone service has been affected in all offices. Joseph Resurreccion has learned from the power company that these outages are part of an intentional program of rolling blackouts designed to relieve strain on the power grid during this arctic blast. They anticipate the problem lasting until Friday. The power grid is essentially state-wide, so this is not an isolated phenomenon. It appears that the outages will last 45" - 60" and so far have been spaced several hours apart. We are unable to get definite information from the power company on whether this pattern will hold over the period of the freeze, or will vary, or will get worse, or get better. Also, keep in mind that in an event like this there will also be unplanned power outages in many cities; those are even more unpredictable.
 In these conditions, it is particularly important that you regularly save your work product on the G:\ drive. That server is designed to cut off the remote users in the event of a power outage, and you will lose any unsaved work.</p>
-			<p>Branch managers will decide whether the effects of these rolling blackouts (intermittent loss of electrical power to your office, internet, CTS &amp; VoIP phones, etc.) are so disruptive to office operations that it justifies shutting down the office until the situation improves later in the week. In most of our service area, the moisture (snow, sleet, ice, etc.) is forecast to arrive tomorrow, further complicating access to offices &amp; perhaps putting more pressure on the power grid. Those who can work effectively from home this week may do so; clear it with your branch manager first and make sure that she has your cell phone number.</p>
+				<p>Branch managers will decide whether the effects of these rolling blackouts (intermittent loss of electrical power to your office, internet, CTS &amp; VoIP phones, etc.) are so disruptive to office operations that it justifies shutting down the office until the situation improves later in the week. In most of our service area, the moisture (snow, sleet, ice, etc.) is forecast to arrive tomorrow, further complicating access to offices &amp; perhaps putting more pressure on the power grid. Those who can work effectively from home this week may do so; clear it with your branch manager first and make sure that she has your cell phone number.</p>
+			</div>	
+		
+			<div id="status">
+			</div>
+			<div class="clear"></div>
 		</div>
-		<div class="clear"></div>
+		
+		
 		
 		<hr width="85%" />
-		<div id="contain">
-			<div id="status">
-				<table border="1" cellspacing="0" cellpadding="5">
-					<tr>
-						<th>Office</th>
-						<th>Status</th>
-					</tr>
-					<tr>
-						<td>Alpine</td>
-						<td>CLOSED: Weather</td>
-					</tr>
-					<tr>
-						<td>Austin</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>Bee County Regional Public Defender</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>Brownsville</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>Corpus Christi Courthouse</td>
-						<td>CLOSED: Power Outage</td>
-					</tr>
-					<tr>
-						<td>Corpus Christi Pueblo</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>Del Rio</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>Eagle Pass</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>Edinburg</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>El Paso</td>
-						<td>CLOSED: Weather</td>
-					</tr>
-					<tr>
-						<td>Harlingen</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>Kerrville</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>Laredo</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>Nashville (SMLS)</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>San Antonio Main</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>Sinton</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>Victoria</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>Weslaco</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>Willacy County Public Defender</td>
-						<td>Open</td>
-					</tr>
-				</table>
-			</div>
-		
-			<div id="twitter">
-				<img src="./images/twitter-32x32.png" />
-			</div>
+		<div id="bottom">		
+			<div id="twitter"></div>
 			<div class="clear"></div>
 		</div>
 		<script type="text/javascript">
