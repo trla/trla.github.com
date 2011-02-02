@@ -1,0 +1,31 @@
+body{
+	font-family: 'Arial', sans-serif;
+	font-size: .9em;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+img{
+	border: none;
+}
+
+#message{
+	margin: auto;
+	width: 75%;
+	text-align: left;
+	border: 1px solid #ccc;
+	background-color: #eee;
+	padding: 10px;
+}
+
+#message p{
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+#status{
+	margin: auto;
+	text-align: center;
+}
