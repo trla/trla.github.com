@@ -10,6 +10,34 @@ img{
 	border: none;
 }
 
+a,
+a:hover{
+	color: #2c4762;
+}
+
+#menu{
+	font-size: 1.2em;
+}
+
+#alerts{
+	font-size: 1.5em;
+	margin: 10px;
+	color: #000;
+}
+
+#alerts span{
+	padding: 4px;
+	border: 1px solid #ccc;
+}
+
+.up{
+	background-color: #0f0;
+}
+
+.down{
+	background-color: #f00;
+}
+
 #message{
 	margin: auto;
 	width: 75%;
