@@ -11,7 +11,7 @@ var offices = [
 		{
 		
 			"subject":"Bee County PD",
-			"stat":"Open"
+			"stat":"CLOSED"
 		},
 		{
 			"subject":"Brownsville",
@@ -43,7 +43,7 @@ var offices = [
 		},
 		{
 			"subject":"Harlingen",
-			"stat":"Open"
+			"stat":"CLOSED"
 		},
 		{
 			"subject":"Kerrville",
