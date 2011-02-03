@@ -6,7 +6,7 @@ var offices = [
 		
 		{
 			"subject":"Austin",
-			"stat":"Open"
+			"stat":"CLOSED"
 		},
 		{
 		
