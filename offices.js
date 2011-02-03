@@ -59,7 +59,7 @@ var offices = [
 		},
 		{
 			"subject":"San Antonio Main",
-			"stat":"Open"
+			"stat":"CLOSED"
 		},
 		{
 			"subject":"Sinton",
