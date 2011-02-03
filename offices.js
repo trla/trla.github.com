@@ -15,15 +15,15 @@ var offices = [
 		},
 		{
 			"subject":"Brownsville",
-			"stat":"Closing at 1pm"
+			"stat":"CLOSED"
 		},
 		{
 			"subject":"Corpus Christi Courthouse",
-			"stat":"Open"
+			"stat":"CLOSED"
 		},
 		{
 			"subject":"Corpus Christi Pueblo",
-			"stat":"Open"
+			"stat":"CLOSED"
 		},
 		{
 			"subject":"Del Rio",
@@ -63,11 +63,11 @@ var offices = [
 		},
 		{
 			"subject":"Sinton",
-			"stat":"Open"
+			"stat":"CLOSED"
 		},
 		{
 			"subject":"Victoria",
-			"stat":"Closing at Noon"
+			"stat":"CLOSED"
 		},
 		{
 			"subject":"Weslaco",
