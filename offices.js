@@ -1,96 +1,96 @@
 var offices = [
 		{
 			"subject":"Alpine",
-			"status":"CLOSED Weather"
+			"stat":"CLOSED Weather"
 		},
 		
 		{
 			"subject":"Austin",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 		
 			"subject":"Bee County PD",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"Brownsville",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"Corpus Christi Courthouse",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"Corpus Christi Pueblo",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"Del Rio",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"Eagle Pass",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"Edinburg",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"El Paso",
-			"status":"CLOSED Weather"
+			"stat":"CLOSED Weather"
 		},
 		{
 			"subject":"Harlingen",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"Kerrville",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"Laredo",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"Nashville (SMLS)",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"San Antonio Main",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"Sinton",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"Victoria",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"Weslaco",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"Willacy County PD",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"<b>Citrix / CTS</b>",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"<b>MPLS Internet</b>",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"<b>Email</b>",
-			"status":"Open"
+			"stat":"Open"
 		},
 		{
 			"subject":"<b>VoIP Phones</b>",
-			"status":"Open"
+			"stat":"Open"
 		}
 	];

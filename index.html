@@ -9,7 +9,7 @@
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function(){
 				$.each(offices, function(i, office){
-					$('#status').append('<div class="office">' + office.subject + ': <span class="status">' + office.status + '</div>');
+					$('#status').append('<div class="office">' + office.subject + ': <span class="status">' + office.stat + '</div>');
 					
 					$('.status').each(function(){
 						if ($(this).html() == 'Open') {
