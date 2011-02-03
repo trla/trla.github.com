@@ -15,7 +15,7 @@ var offices = [
 		},
 		{
 			"subject":"Brownsville",
-			"stat":"Open"
+			"stat":"Closing at 1pm"
 		},
 		{
 			"subject":"Corpus Christi Courthouse",
@@ -67,7 +67,7 @@ var offices = [
 		},
 		{
 			"subject":"Victoria",
-			"stat":"Open"
+			"stat":"Closing at Noon"
 		},
 		{
 			"subject":"Weslaco",
