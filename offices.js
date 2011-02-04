@@ -1,7 +1,7 @@
 var offices = [
 		{
 			"subject":"Alpine",
-			"stat":"CLOSED Weather"
+			"stat":"CLOSED"
 		},
 		
 		{
@@ -11,11 +11,11 @@ var offices = [
 		{
 		
 			"subject":"Bee County PD",
-			"stat":"CLOSED"
+			"stat":"CLOSED until 10AM 2/4"
 		},
 		{
 			"subject":"Brownsville",
-			"stat":"CLOSED"
+			"stat":"CLOSED until 10AM 2/4"
 		},
 		{
 			"subject":"Corpus Christi Courthouse",
@@ -35,7 +35,7 @@ var offices = [
 		},
 		{
 			"subject":"Edinburg",
-			"stat":"Open"
+			"stat":"CLOSED until 10AM 2/4"
 		},
 		{
 			"subject":"El Paso",
@@ -47,7 +47,7 @@ var offices = [
 		},
 		{
 			"subject":"Kerrville",
-			"stat":"Open"
+			"stat":"CLOSED until 10AM 2/4"
 		},
 		{
 			"subject":"Laredo",
@@ -71,7 +71,7 @@ var offices = [
 		},
 		{
 			"subject":"Weslaco",
-			"stat":"Open"
+			"stat":"CLOSED until 10AM 2/4"
 		},
 		{
 			"subject":"Willacy County PD",
