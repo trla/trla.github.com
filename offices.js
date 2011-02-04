@@ -15,11 +15,11 @@ var offices = [
 		{
 		
 			"subject":"Bee County PD",
-			"stat":"CLOSED until 10AM 2/4"
+			"stat":"CLOSED 2/4"
 		},
 		{
 			"subject":"Brownsville",
-			"stat":"CLOSED until 10AM 2/4"
+			"stat":"CLOSED 2/4"
 		},
 		{
 			"subject":"Corpus Christi Courthouse",
@@ -39,7 +39,7 @@ var offices = [
 		},
 		{
 			"subject":"Edinburg",
-			"stat":"CLOSED until 10AM 2/4"
+			"stat":"CLOSED 2/4"
 		},
 		{
 			"subject":"El Paso",
@@ -47,7 +47,7 @@ var offices = [
 		},
 		{
 			"subject":"Harlingen",
-			"stat":"CLOSED until 10AM 2/4"
+			"stat":"CLOSED 2/4"
 		},
 		{
 			"subject":"Kerrville",
@@ -75,11 +75,11 @@ var offices = [
 		},
 		{
 			"subject":"Weslaco",
-			"stat":"CLOSED until 10AM 2/4"
+			"stat":"CLOSED 2/4"
 		},
 		{
 			"subject":"Willacy County PD",
-			"stat":"CLOSED until 10AM 2/4"
+			"stat":"CLOSED 2/4"
 		},
 		{
 			"subject":"<b>Citrix / CTS</b>",
