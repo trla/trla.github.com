@@ -55,7 +55,7 @@ var offices = [
 		},
 		{
 			"subject":"Laredo",
-			"stat":"Open"
+			"stat":"CLOSED 2/4"
 		},
 		{
 			"subject":"Nashville (SMLS)",
