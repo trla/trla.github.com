@@ -112,3 +112,8 @@ th{
 	background-color: #2c4762;
 	text-shadow: 0px 1px 1px #000;
 }
+
+.alert{
+	color: #f00;
+	font-weight: bold;
+}
