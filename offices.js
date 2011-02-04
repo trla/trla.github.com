@@ -5,12 +5,12 @@ var offices = [
 		},
 		{
 			"subject":"Alpine",
-			"stat":"CLOSED"
+			"stat":"CLOSED 2/4"
 		},
 		
 		{
 			"subject":"Austin",
-			"stat":"CLOSED"
+			"stat":"CLOSED 2/4"
 		},
 		{
 		
@@ -43,15 +43,15 @@ var offices = [
 		},
 		{
 			"subject":"El Paso",
-			"stat":"CLOSED Weather"
+			"stat":"CLOSED 2/4"
 		},
 		{
 			"subject":"Harlingen",
-			"stat":"CLOSED"
+			"stat":"CLOSED until 10AM 2/4"
 		},
 		{
 			"subject":"Kerrville",
-			"stat":"CLOSED until 10AM 2/4"
+			"stat":"Open"
 		},
 		{
 			"subject":"Laredo",
@@ -63,7 +63,7 @@ var offices = [
 		},
 		{
 			"subject":"San Antonio Main",
-			"stat":"CLOSED"
+			"stat":"CLOSED 2/4"
 		},
 		{
 			"subject":"Sinton",
