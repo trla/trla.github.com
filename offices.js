@@ -1,7 +1,7 @@
 var offices = [
 		{
 			"subject":"<b>RGV OFFICES</b>",
-			"stat":"Check this site again BEFORE 10AM"
+			"stat":"CLOSED: Road Conditions"
 		},
 		{
 			"subject":"Alpine",
