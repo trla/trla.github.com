@@ -75,7 +75,7 @@ var offices = [
 		},
 		{
 			"subject":"Willacy County PD",
-			"stat":"Open"
+			"stat":"CLOSED until 10AM 2/4"
 		},
 		{
 			"subject":"<b>Citrix / CTS</b>",
