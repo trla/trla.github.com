@@ -1,33 +1,29 @@
 var offices = [
 		{
-			"subject":"<b>RGV OFFICES</b>",
-			"stat":"CLOSED: Road Conditions"
-		},
-		{
 			"subject":"Alpine",
-			"stat":"CLOSED 2/4"
+			"stat":"Open"
 		},
 		
 		{
 			"subject":"Austin",
-			"stat":"CLOSED 2/4"
+			"stat":"Open"
 		},
 		{
 		
 			"subject":"Bee County PD",
-			"stat":"CLOSED 2/4"
+			"stat":"Open"
 		},
 		{
 			"subject":"Brownsville",
-			"stat":"CLOSED 2/4"
+			"stat":"Open"
 		},
 		{
 			"subject":"Corpus Christi Courthouse",
-			"stat":"CLOSED"
+			"stat":"Open"
 		},
 		{
 			"subject":"Corpus Christi Pueblo",
-			"stat":"CLOSED"
+			"stat":"Open"
 		},
 		{
 			"subject":"Del Rio",
@@ -39,15 +35,15 @@ var offices = [
 		},
 		{
 			"subject":"Edinburg",
-			"stat":"CLOSED 2/4"
+			"stat":"Open"
 		},
 		{
 			"subject":"El Paso",
-			"stat":"CLOSED 2/4"
+			"stat":"Open"
 		},
 		{
 			"subject":"Harlingen",
-			"stat":"CLOSED 2/4"
+			"stat":"Open"
 		},
 		{
 			"subject":"Kerrville",
@@ -55,7 +51,7 @@ var offices = [
 		},
 		{
 			"subject":"Laredo",
-			"stat":"CLOSED 2/4"
+			"stat":"Open"
 		},
 		{
 			"subject":"Nashville (SMLS)",
@@ -63,23 +59,23 @@ var offices = [
 		},
 		{
 			"subject":"San Antonio Main",
-			"stat":"CLOSED 2/4"
+			"stat":"Open"
 		},
 		{
 			"subject":"Sinton",
-			"stat":"CLOSED"
+			"stat":"Open"
 		},
 		{
 			"subject":"Victoria",
-			"stat":"CLOSED"
+			"stat":"Open"
 		},
 		{
 			"subject":"Weslaco",
-			"stat":"CLOSED 2/4"
+			"stat":"Open"
 		},
 		{
 			"subject":"Willacy County PD",
-			"stat":"CLOSED 2/4"
+			"stat":"Open"
 		},
 		{
 			"subject":"<b>Citrix / CTS</b>",
