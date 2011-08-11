@@ -8,13 +8,13 @@
         <script type="text/javascript" charset="utf-8" src="offices.js"></script>
         <script type="text/javascript" charset="utf-8">
             $(document).ready(function(){
-                /* Get Bill Data */
+                /* Get Bill Data 
                 $.getJSON('http://openstates.sunlightlabs.com/api/v1/bills/tx/82/HB%203790/?apikey=2502cf1200a940e29c3d403d64e3a7cd&callback=?', function(data){
                     $.each(data.actions, function(i, el){
                         $('#bill').append('<div class="action">' + el.date + ': ' + el.action + '</div>');
                     });
                 });
-                
+                */
                 
                 /* Get Twitter Feed */
                 $.getJSON('https://twitter.com/statuses/user_timeline/trla.json?count=5&callback=?', function(feed){
@@ -32,18 +32,24 @@
             <img src="./images/header_logo.gif" />
         </div>
         
+        <div id="alerts">
+            <h1 class="alert">EMAIL IS CURRENTLY DOWN</h1>
+        </div>
+        <div class="clear"></div>
         <div id="top">
             <h2>TRLA Twitter Feed</h2>
             <div id="twitter"></div>
             <div class="clear"></div>
         </div>
-                
+        
+        <!--        
         <div id="bottom">
             <h2>HR 3790 Status</h2>
             <h4><a href="http://www.capitol.state.tx.us/BillLookup/History.aspx?LegSess=82R&Bill=HB3790">HB 3790 History</a></h4>
             <div id="bill"></div>    
             <div class="clear"></div>
         </div>
+        -->
         
         <script type="text/javascript">
           var _gaq = _gaq || [];

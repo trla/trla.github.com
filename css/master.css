@@ -53,10 +53,8 @@ a:hover{
 	color: #a00;
 }
 #alerts{
-	float: left;
 	font-size: 1.2em;
 	color: #fff;
-	margin-left: 10px;
 }
 
 #alerts div{
@@ -78,14 +76,14 @@ a:hover{
 #bill,
 #twitter{
 	margin: auto;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	width: 500px;
 }
 
 .action,
 .tweet{
 	padding: 2px;
-	max-height: 60px;
+	max-height: 100px;
 	margin-bottom: 4px;
 	padding-bottom: 4px;
 	border-bottom: 1px solid #ccc;
