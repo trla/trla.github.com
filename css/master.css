@@ -23,8 +23,7 @@ a:hover{
 }
 
 #message{
-	margin: auto;
-	float: left;
+	margin: 0 auto;
 	width: 500px;
 	text-align: left;
 	border: 1px solid #ccc;
